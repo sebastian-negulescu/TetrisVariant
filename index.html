@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>
+      Tetris
+    </title>
+    <link href="https://fonts.googleapis.com/css?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+  </head>
+  <body>
+    <!--
+    TODO:
+    build site
+      style
+      reflection
+      controls
+    line clears
+    score
+      database
+    level
+    balanced "random" sequence
+    -->
+    <div id="main">
+      <div id="titleDiv">
+        <h1>
+          Tetris
+        </h1>
+      </div>
+
+      <div id="navDiv">
+        <nav>
+          <ul id="navList">
+            <li>
+              <a href="#Canvas">play</a>
+            </li>
+            <li>
+              <a href="#controls">controls</a>
+            </li>
+            <li>
+              <a href="#objective">objective</a>
+            </li>
+            <li>
+              <a href="#reflection">reflection</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <canvas id="Canvas" tabindex="1"></canvas>
+
+      <div id="controls">
+        <h2 id="contTitle">
+          Controls
+        </h2>
+        <span>
+          [&#8592;] - move left
+        </span>
+        <span>
+          [&#8594;] - move right
+        </span>
+        <span>
+          [s] (hold) - speed up
+        </span>
+        <span>
+          [a] - rotate left
+        </span>
+        <span>
+          [d] - rotate right
+        </span>
+        <span>
+          [enter] - play game
+        </span>
+      </div>
+
+      <div id="objective">
+        <h2 id="objTitle">
+          Objective
+        </h2>
+        <p class="lastPara">
+          The goal of this Tetris-variant is not to achieve the highest score, like in the other games, but to cover as much of the grid as you can. In this variant, there are no line clears, meaning that the game will end faster. Your objective is to fill up the highest percentage of the board as you can before the game ends.
+        </p>
+      </div>
+
+      <div id="reflection">
+        <h2>
+          Reflection
+        </h2>
+        <p>
+          I would like to pursue computer science in the future. My fascination for technology began in grade 9 and steered me in this direction. The entirity of computers: low-level interaction directly with the hardware, as well as high-level scripting intrigues me. Furthermore, I believe that I will be able to make a change for the better in our society with the help of computer science. With the shift towards the digital age, we are able to simulate scenarios that are overly dangerous. For example: surgery. With the help of virtual reality, we can simulate surgeries to help doctors train before going out into the field. With a computer science degree, I would like to help build systems like these so we can improve our societal services and benefit the lives of others.
+        </p>
+        <p>
+          Computer science helps train the brain for logical thinking. To "think like a computer", so to speak, is to think logically. This helps when dealing with overwhelming situations in life. It always helps to have a logical mind so you can sort things out. I am able to create a mental checklist with my priorities, and efficiently manage my time to help lower my stress levels concerning pressing matters.
+        </p>
+        <p>
+          Another way computer science is helpful is by teaching my how to create a full website. Combining this with my previous knowledge of algorithms and back-end computer systems, I am able to develop full-stack websites including a front-end, server-side, and database. This is useful in case I wanted to create some sort of online service or web app, as I would be able to make the whole system myself for no initial cost.
+        </p>
+        <p class="lastPara">
+          Finally, this computer science course has taught me how to be resourceful and ask for help. This is important in the future because I will not know that to do all of the time. It is important to ask questions and I have learned that from comuter science. When there is a feature that I am trying to implement and I have no idea how to implement it, I would consult other resources and ask questions to my peers and the internet.
+        </p>
+      </div>
+    </div>
+
+    <script src="js/Collision.js"></script>
+    <script src="js/Events.js"></script>
+    <script src="js/Pieces.js"></script>
+    <script src="js/Window.js"></script>
+    <script src="js/Main.js"></script>
+    <script src="js/Render.js"></script>
+  </body>
+</html>

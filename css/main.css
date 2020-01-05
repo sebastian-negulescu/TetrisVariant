@@ -1,0 +1,215 @@
+@font-face {
+  font-family: 'arcade';
+  src: url('../Tetris.ttf'); /* https://fontmeme.com/fonts/tetris-font/ */
+}
+
+@font-face {
+  font-family: 'pixellated';
+  src: url('../VT323-Regular.ttf'); /* https://fonts.google.com/?category=Monospace&selection.family=VT323 */
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 20px;
+  background-image: linear-gradient(#0c0026, #35004c);
+  min-height: 100vh;
+  font-family: 'VT323', monospace;
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'arcade';
+  font-size: 3em;
+  color: #FFFFFF;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+nav {
+  padding: 1em 0 1em 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  border: 2px solid #FF00FF;
+  padding: 0.5em;
+  margin: 0.5em;
+  color: #FFFFFF;
+  transition: 1s;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  background-color: #007dc1;
+  transition: 1s;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+h2 {
+  margin-bottom: 0.5em;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+.lastPara {
+  margin-bottom: 0px;
+}
+
+#controls {
+  background-color: #cc0033;
+  padding: 2em;
+  font-size: 1.25em;
+  display: grid;
+  border: 5px solid #007dc1;
+}
+
+#objective {
+  background-color: #cc005f;
+  padding: 2em;
+  font-size: 1.25em;
+  border: 5px solid #007dc1;
+  display: grid;
+}
+
+#reflection {
+  background-color: #cc00a3;
+  padding: 2em;
+  font-size: 1.25em;
+  border: 5px solid #007dc1;
+}
+
+#navList {
+  display: flex;
+  justify-content: center;
+}
+
+#main {
+  display: grid;
+  color: #FFFFFF;
+  grid-gap: 1em;
+  margin: 1em;
+  max-width: 600px;
+}
+
+#Canvas {
+  background-color: #000000;
+  display: block;
+  margin: auto;
+  border: 5px solid #007dc1;
+}
+
+@media (min-width: 651px) and (max-width: 1200px) {
+  #navDiv {
+    grid-column: 1 / 3;
+  }
+
+  #main {
+    grid-template-columns: 260px auto;
+  }
+
+  #titleDiv {
+    grid-column: 1 / 3;
+  }
+
+  h1 {
+    font-size: 4em;
+  }
+
+  #Canvas {
+    grid-column: 1 / 2;
+  }
+
+
+  #contTitle {
+    margin-bottom: 0px;
+  }
+
+  #controls {
+    grid-column: 2 / 3;
+    padding: 2em;
+  }
+
+  #controlsList {
+    //display: flex;
+  }
+
+  #objective {
+    grid-column: 1 / 3;
+  }
+
+  #reflection {
+    grid-column: 1 / 3;
+  }
+}
+
+@media (min-width: 1201px) {
+  #navDiv {
+    display: none;
+  }
+
+  #main {
+    grid-template-columns: 260px auto auto;
+    max-width: 1200px;
+  }
+
+  #titleDiv {
+    grid-column: 1 / 4;
+  }
+
+  h1 {
+    font-size: 4em;
+  }
+
+  #objective {
+    display: grid;
+  }
+
+  #objTitle {
+    margin-bottom: 0px;
+  }
+
+  #Canvas {
+    grid-column: 1 / 2;
+  }
+
+  #contTitle {
+    margin-bottom: 0px;
+  }
+
+  #controls {
+    grid-column: 2 / 3;
+    padding: 2em;
+  }
+
+  #objective {
+    grid-column: 3 / 4;
+    padding: 2em;
+    display: grid;
+  }
+
+  #reflection {
+    grid-column: 1 / 4;
+  }
+}
